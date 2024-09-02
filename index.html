@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Hamster Kombat</title>
+    <title>Генератор Ключей Hamster Kombat</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -11,8 +11,8 @@
     <main class="main-container">
         <section class="language-selector">
             <select id="languageSelect">
-                <option value="en">English</option>
                 <option value="ru">Русский</option>
+                <option value="en">English</option>
                 <option value="sr">Српски</option>
                 <option value="be">Беларуская</option>
                 <option value="ar">العربية</option>
@@ -31,8 +31,8 @@
             </select>
         </section>
         <section class="container">
-            <h1>Hamster Kombat</h1>
-            <label for="gameSelect" id="gameSelectLabel">Select game:</label>
+            <h1>Генератор Ключей Hamster Kombat</h1>
+            <label for="gameSelect" id="gameSelectLabel">Выберите игру для генерации ключа:</label>
             <select id="gameSelect">
                 <option value="ChainCube2048">Chain Cube 2048</option>
                 <option value="TrainMiner">Train Miner</option>
@@ -44,7 +44,7 @@
                 <option value="GangsWars">Gangs Wars</option>
                 <option value="Zoopolis">Zoopolis</option>
             </select>
-            <label for="keyCountSelect" id="keyCountLabel">Select no of keys required :</label>
+            <label for="keyCountSelect" id="keyCountLabel">Выберите количество ключей для генерации:</label>
             <select id="keyCountSelect">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -59,14 +59,14 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
             </select>
-            <button id="startBtn" class="button">Generate</button>
+            <button id="startBtn" class="button">Сгенерировать ключи</button>
             <div id="progressContainer" class="progress-container hidden">
                 <div id="progressBar" class="progress-bar"></div>
                 <span id="progressText" class="progress-text">0%</span>
             </div>
             <div id="keyContainer" class="key-container hidden">
-                <h2 id="generatedKeysTitle">Generated keys:</h2>
-                <button id="copyAllBtn" class="button hidden">Copy all</button>
+                <h2 id="generatedKeysTitle">Сгенерированные ключи:</h2>
+                <button id="copyAllBtn" class="button hidden">Скопировать все ключи</button>
                 <div id="keysList" class="keys-list"></div>
             </div>
         </section>
